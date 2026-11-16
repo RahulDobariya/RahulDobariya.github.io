@@ -4,350 +4,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Dobariya</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="https://kit.fontawesome.com/a079df429a.js" crossorigin="anonymous"></script>
+    <meta name="description"
+        content="Rahul Dobariya is a Senior Flutter Developer with 5+ years of experience building cross-platform apps for Android, iOS, and web.">
+    <meta name="theme-color" content="#101713">
+    <title>Rahul Dobariya | Senior Flutter Developer</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- NAV BAR -->
-    <div class="nav">
+    <header class="nav">
         <div id="nav-menu">
-            <nav>
-                <a class="logo" href="#"><img width="100px" height="100px" src="./images/logo.png" /></a>
-
+            <nav aria-label="Main navigation">
+                <a class="logo" href="#home" aria-label="Rahul Dobariya home">RD<span>.</span></a>
                 <ul id="sidemenu">
-                    <li><a class="nav-link home" href="#home">HOME</a></li>
-                    <li><a class="nav-link about" href="#about">ABOUT</a></li>
-                    <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-                    <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-                    <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#platforms">Platforms</a></li>
+                    <li><a class="nav-link" href="#toolkit">Toolkit</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                     <li id="resume-button-1">
-                        <a class="nav-link resume" id="resume-link-1" href='./RahulDobariya-CV.pdf'
-                            download="Rahul Dobariya Resume">
-                            RESUME
-                        </a>
+                        <a class="nav-link resume" id="resume-link-1"
+                            href="./Rahul_Dobariya_Senior_Flutter_Developer_Resume.pdf"
+                            download="Rahul_Dobariya_Senior_Flutter_Developer_Resume.pdf">Resume</a>
                     </li>
-                    <li><i class="bi bi-brightness-high" id="toggle"></i></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li>
+                        <button class="theme-toggle" id="toggle" type="button" aria-label="Switch to light theme">
+                            <span aria-hidden="true">◐</span>
+                        </button>
+                    </li>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="sidemenu">
+                    <span class="menu-icon" aria-hidden="true"></span>
+                </button>
             </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- HOME PAGE -->
-    <section id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div id="one">
-                    <div class="text-1">
-                        Hi, I am <span id="user-detail-name" class="text-2">RAHUL DOBARIYA</span>
+    <main>
+        <section id="home" class="hero">
+            <div class="max-width">
+                <div class="home-content">
+                    <div id="one">
+                        <p class="eyebrow"><span class="status-dot"></span> FLUTTER DEVELOPER</p>
+                        <p class="text-1">Hi, I'm</p>
+                        <h1 id="user-detail-name" class="text-2">Rahul Dobariya<span>.</span></h1>
+                        <p class="text-3">Senior Flutter Developer <span>·</span> 5+ years</p>
+                        <p class="hero-description">
+                            I build cross-platform applications with Flutter and Dart, combining thoughtful UI,
+                            reliable architecture, and measurable performance.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#contact">
+                                Let's talk about your app <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="button button-secondary" id="resume-link-2"
+                                href="./Rahul_Dobariya_Senior_Flutter_Developer_Resume.pdf"
+                                download="Rahul_Dobariya_Senior_Flutter_Developer_Resume.pdf">
+                                Download resume <span aria-hidden="true">↓</span>
+                            </a>
+                        </div>
+                        <div class="hero-note">
+                            <span>Flutter</span><span class="hero-note-divider"></span>
+                            <span>Dart</span><span class="hero-note-divider"></span>
+                            <span>Android</span><span class="hero-note-divider"></span>
+                            <span>iOS</span><span class="hero-note-divider"></span><span>Web</span>
+                        </div>
                     </div>
-                    <div class="text-3">
-                        <span class="typing"></span>
+                    <div class="hero-visual">
+                        <div class="portrait-orbit orbit-one"></div>
+                        <div class="portrait-orbit orbit-two"></div>
+                        <div class="portrait-card">
+                            <img src="./images/profile.png" alt="Portrait of Rahul Dobariya">
+                        </div>
+                        <div class="floating-card">
+                            <span class="floating-card-mark" aria-hidden="true">✳</span>
+                            <span>Flutter apps<br>made with care</span>
+                        </div>
+                        <div class="hero-index">01 <span>/</span> 07</div>
                     </div>
-                    <button id="resume-button-2">
-                        <a id="resume-link-2" href='RahulDobariya-CV.pdf' download="Rahul Dobariya Resume">RESUME</a>
-                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-------------------- ABOUT ---------------------->
-    <section title="About" id="about" class="about section">
-        <title>About</title>
-        <h1>ABOUT ME</h1>
-        <div class="about-section1">
-            <div>
-                <img class="home-img" src="https://avatars.githubusercontent.com/u/122685622?v=4"
-                    alt="./images/profile.png">
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>Flutter apps, <span>made thoughtfully.</span></h2>
             </div>
-            <div>
-                <p id="user-detail-intro">
-                    Experienced developer with expertise in MERN stack technology, including MongoDB, Express, React,
-                    and Node.js. Experience in Flutter, React, React Native, and Android development. Writes
-                    production-ready code using Java, JavaScript, and Dart, and manages data using SQLite, MongoDB, and
-                    Firebase. Strong leadership skills inspire and motivate others, staying up-to-date with industry
-                    trends. Connect with a skilled and dedicated developer to build amazing applications using the
-                    latest technologies.
+            <div class="about-section1">
+                <div class="about-photo">
+                    <img class="home-img" src="./images/profile.png" alt="Rahul Dobariya">
+                    <span class="about-photo-caption">Based in Surat, India</span>
+                </div>
+                <div class="about-copy">
+                    <p id="user-detail-intro">
+                        I'm a Senior Flutter Developer with 5+ years of experience building cross-platform
+                        applications for Android, iOS, and web. I work with Dart, BLoC and Riverpod, Clean
+                        Architecture, and REST/GraphQL services to ship maintainable products. My work spans
+                        performance tuning, automated testing, and reliable app releases.
+                    </p>
+                    <div class="about-highlights">
+                        <div><strong>Experience</strong><span>5+ years in Flutter</span></div>
+                        <div><strong>Platforms</strong><span>Android · iOS · Web</span></div>
+                        <div><strong>Focus</strong><span>Architecture · quality · performance</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="platforms" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">ONE FRAMEWORK, MANY DESTINATIONS</p>
+                <h2>Flutter's platform <span>reach.</span></h2>
+                <p class="section-intro">
+                    Flutter 3.50 supports building for mobile, web, and desktop. Platform coverage depends on
+                    operating-system and browser versions.
+                </p>
+                <a class="source-link" href="https://docs.flutter.dev/reference/supported-platforms"
+                    target="_blank" rel="noopener noreferrer">See Flutter's official support matrix <span
+                        aria-hidden="true">↗</span></a>
+            </div>
+            <div class="platform-grid">
+                <article class="platform-card">
+                    <span class="platform-number">01 / MOBILE</span>
+                    <h3>Phones &amp; tablets</h3>
+                    <div class="platform-tags"><span>Android</span><span>iOS</span></div>
+                </article>
+                <article class="platform-card">
+                    <span class="platform-number">02 / WEB</span>
+                    <h3>Modern browsers</h3>
+                    <div class="platform-tags"><span>Chrome</span><span>Firefox</span><span>Safari</span><span>Edge</span></div>
+                </article>
+                <article class="platform-card">
+                    <span class="platform-number">03 / DESKTOP</span>
+                    <h3>Desktop apps</h3>
+                    <div class="platform-tags"><span>Windows</span><span>macOS</span><span>Linux</span></div>
+                </article>
+            </div>
+            <p class="platform-experience">
+                <strong>Hands-on experience:</strong> Android, iOS, and web · Windows/macOS (basic)
+            </p>
+        </section>
+
+        <section id="toolkit" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">BUILD · DEBUG · SHIP</p>
+                <h2>Flutter <span>toolkit.</span></h2>
+                <p class="section-intro">
+                    The platforms, packages, databases, and delivery tools listed in my resume, organized by where
+                    they fit in a Flutter project.
                 </p>
             </div>
-        </div>
-    </section>
-
-    <!-------------------- SKILLS ---------------------->
-    <section id="skills">
-        <h1>SKILLS</h1>
-        <div class="skill">
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-html-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">HTML</h5>
+            <div class="core-stack">
+                <span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span>
+                <span>Firebase</span><span>SQLite</span>
             </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-css-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">CSS</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-javascript-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">JavaScript</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-react-40.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">React</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-redux-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Redux</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-typescript-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">TS</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-node-js-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Node</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-express-js-40.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Express</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-bootstrap-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Bootstrap</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-chakra-ui-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Chakra UI</h5>
-            </div>
-            <div class="skills-card" style=>
-                <img class="skills-card-img" src="./images/icons8-tailwindcss-48.png" alt="tailwind-css.png" />
-                <h5 class="skills-card-name">Tailwind</h5>
-            </div>
-            <div class="skills-card" style=>
-                <img class="skills-card-img" src="./images/icons8-sass.png" alt="sass-css.png" />
-                <h5 class="skills-card-name">Scss</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img"
-                    src="./images/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png"
-                    alt="mongodb.png" />
-                <h5 class="skills-card-name">MongoDB</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-figma-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Figma</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-canva-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Canva</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-dart-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Dart</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-flutter-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Flutter</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/icons8-android-48.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Android</h5>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h1>PROJECTS</h1>
-        <div class="project">
-            <div class="project-card">
-                <div id="firstprojectdiv">
-                    <img src="https://user-images.githubusercontent.com/122685622/252686278-fdf9df77-6767-4a89-90a6-6b6119682904.png"
-                        alt="">
-                </div>
-                <div>
-                    <h1 class="project-title">BLUEMERCURY CLONE</h1>
-                    <p class="project-description">A clone of Bluemercury, which is an e-commerce web application that
-                        helps users to buy cosmetic products.</p>
-                    <p class="project-tech-stack">Tech Stack used : <span> React | CSS | Redux | Chakra UI </span></p>
-                    <div class="repo-links">
-                        <div class="project-github-link">
-                            <span>
-                                <a href="https://github.com/RahulDobariya/bluemercury_clone" target="_blank">
-                                    Github
-                                </a>
-                            </span>
-                        </div>
-                        <div class="project-deployed-link">
-                            <span>
-                                <a href="https://bluemercury-site-clone.netlify.app/" target="_blank">
-                                    Live
-                                </a>
-                            </span>
-                        </div>
+            <div class="toolkit-grid">
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">FRAMEWORK &amp; RENDERING</p><span>01</span></div>
+                    <div class="skill-tags">
+                        <span>Flutter 3.x</span><span>Material 3</span><span>Cupertino</span>
+                        <span>CustomPaint</span><span>Platform Channels</span><span>Impeller</span>
                     </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div id="firstprojectdiv">
-                    <img src="https://github.com/RahulDobariya/ecotourism/assets/122685622/923744ee-3859-438d-a122-7de7c196b4b1"
-                        alt="">
-                </div>
-                <div>
-                    <h1 class="project-title">Eco-Tourism Web Project</h1>
-                    <p class="project-description">Our eco-tourism web application provides a comprehensive platform for users to explore eco-friendly travel destinations, learn about sustainable travel practices, and connect with eco-conscious travelers</p>
-                    <p class="project-tech-stack">Tech Stack used : <span> React | Redux | Chakra UI | CSS | JavaScript
-                            | Google Recaptcha</span></p>
-                    <div class="repo-links">
-                        <div class="project-github-link">
-                            <span>
-                                <a href="https://github.com/RahulDobariya/ecotourism/tree/main/ecotourism" target="_blank">
-                                    Github
-                                </a>
-                            </span>
-                        </div>
-                        <div class="project-deployed-link">
-                            <span>
-                                <a href="https://ecotourism-h159u6sp1-askushw07.vercel.app/" target="_blank">
-                                    Live
-                                </a>
-                            </span>
-                        </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">DART &amp; ANDROID</p><span>02</span></div>
+                    <div class="skill-tags">
+                        <span>Dart</span><span>Java (Android)</span><span>Kotlin (basic)</span>
                     </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div id="firstprojectdiv">
-                    <img src="https://user-images.githubusercontent.com/105351295/246278443-2b4cd477-e6b0-4949-90d2-b9dcc64b144c.png"
-                        alt="">
-                </div>
-                <div>
-                    <h1 class="project-title">Mr.Chef CLONE</h1>
-                    <p class="project-description">Mr Chef is an online application to grab your meal with cuisines from
-                        around the globe.</p>
-                    <p class="project-tech-stack">Tech Stack used : <span> React | Redux | Chakra UI | CSS | JavaScript
-                            | Google Recaptcha</span></p>
-                    <div class="repo-links">
-                        <div class="project-github-link">
-                            <span>
-                                <a href="https://github.com/RahulDobariya/Mr-Chef" target="_blank">
-                                    Github
-                                </a>
-                            </span>
-                        </div>
-                        <div class="project-deployed-link">
-                            <span>
-                                <a href="https://mr-chef-two.vercel.app/" target="_blank">
-                                    Live
-                                </a>
-                            </span>
-                        </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">MOBILE CAPABILITIES</p><span>03</span></div>
+                    <div class="skill-tags">
+                        <span>Responsive UI</span><span>Offline-first</span><span>Deep linking</span>
+                        <span>Push notifications</span><span>Performance tuning</span>
                     </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div id="firstprojectdiv">
-                    <img src="https://user-images.githubusercontent.com/122685622/258194299-d2ba97f1-668f-4871-bc20-4eaf03bd1860.png"
-                        alt="">
-                </div>
-                <div>
-                    <h1 class="project-title">PORTFOLIO</h1>
-                    <p class="project-description">Here is my Portfolio website.</p>
-                    <p class="project-tech-stack">Tech Stack used : <span> HTML | CSS | JavaScript</span></p>
-                    <div class="repo-links">
-                        <div class="project-github-link">
-                            <span>
-                                <a href="https://github.com/RahulDobariya/RahulDobariya.github.io" target="_blank">
-                                    Github
-                                </a>
-                            </span>
-                        </div>
-                        <div class="project-deployed-link">
-                            <span>
-                                <a href="https://RahulDobariya.github.io/" target="_blank">
-                                    Live
-                                </a>
-                            </span>
-                        </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">STATE MANAGEMENT</p><span>04</span></div>
+                    <div class="skill-tags">
+                        <span>BLoC</span><span>Cubit</span><span>Riverpod 2.x</span><span>Provider</span><span>GetX</span>
                     </div>
-                </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">ARCHITECTURE &amp; DI</p><span>05</span></div>
+                    <div class="skill-tags">
+                        <span>Clean Architecture</span><span>MVVM</span><span>Repository</span><span>SOLID</span>
+                        <span>GetIt</span><span>Injectable</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">API &amp; SERIALIZATION</p><span>06</span></div>
+                    <div class="skill-tags">
+                        <span>REST</span><span>GraphQL</span><span>graphql_flutter</span><span>Dio 5.x</span>
+                        <span>Retrofit</span><span>Chopper</span><span>WebSockets</span><span>OAuth2</span>
+                        <span>JWT</span><span>Freezed</span><span>json_serializable</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">DATABASES &amp; STORAGE</p><span>07</span></div>
+                    <div class="skill-tags">
+                        <span>Cloud Firestore</span><span>Realtime Database</span><span>Hive</span><span>Realm</span>
+                        <span>SQLite / sqflite</span><span>Isar</span><span>SharedPreferences</span>
+                        <span>MongoDB (basic)</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">FIREBASE SERVICES</p><span>08</span></div>
+                    <div class="skill-tags">
+                        <span>Authentication</span><span>FCM</span><span>Remote Config</span>
+                        <span>Crashlytics</span><span>App Distribution</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">NAVIGATION</p><span>09</span></div>
+                    <div class="skill-tags">
+                        <span>GoRouter</span><span>Navigator 2.0</span><span>Deep links</span>
+                        <span>Auth guards</span><span>Nested routes</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">TESTING &amp; QUALITY</p><span>10</span></div>
+                    <div class="skill-tags">
+                        <span>Unit tests</span><span>Widget tests</span><span>Integration tests</span>
+                        <span>Golden tests</span><span>TDD</span><span>flutter_test</span>
+                        <span>Mockito</span><span>Mocktail</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">CI/CD &amp; RELEASE</p><span>11</span></div>
+                    <div class="skill-tags">
+                        <span>Jenkins</span><span>GitHub Actions</span><span>Fastlane</span><span>Bitrise</span>
+                        <span>Firebase App Distribution</span><span>Google Play</span><span>Apple App Store</span>
+                        <span>Staged rollouts</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">PAYMENTS</p><span>12</span></div>
+                    <div class="skill-tags">
+                        <span>Razorpay</span><span>Google Pay</span><span>Stripe (basic)</span>
+                        <span>Payment integrations</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">DEVELOPER TOOLS</p><span>13</span></div>
+                    <div class="skill-tags">
+                        <span>Android Studio</span><span>VS Code</span><span>Xcode</span><span>Postman</span>
+                        <span>Jira</span><span>Git</span><span>GitHub</span><span>Bitbucket</span>
+                        <span>Agile / Scrum</span><span>SDLC</span><span>Code review</span>
+                    </div>
+                </article>
+                <article class="toolkit-card">
+                    <div class="toolkit-card-heading"><p class="toolkit-label">DESIGN &amp; AI WORKFLOW</p><span>14</span></div>
+                    <div class="skill-tags">
+                        <span>Figma</span><span>Adobe XD (basic)</span><span>GitHub Copilot</span>
+                        <span>Claude</span><span>ChatGPT</span>
+                    </div>
+                </article>
             </div>
-        </div>
-    </section>
+            <a class="source-link toolkit-source" href="https://docs.flutter.dev/tools/devtools"
+                target="_blank" rel="noopener noreferrer">Explore Flutter and Dart DevTools <span
+                    aria-hidden="true">↗</span></a>
+        </section>
 
-    <!-------------------- GitHUB ---------------------->
-    <section class="react-activity-calendar">
-        <h1>GITHUB STATISTIC</h1>
-        <div class="github">
-            <div>
-                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=RahulDobariya"
-                    alt="RahulDobariya" />
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">SELECTED DART REPOSITORIES</p>
+                <h2>Flutter projects, <span>from concept to UI.</span></h2>
+                <p class="section-intro">
+                    A selection of Flutter and Dart projects from my public repositories. Open each source to explore
+                    its implementation and preview.
+                </p>
             </div>
-            <div>
-                <img id="github-top-langs"
-                    src="https://github-readme-stats.vercel.app/api/top-langs?username=RahulDobariya&show_icons=true&locale=en&layout=compact"
-                    alt="top_languages" />
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-art project-art-shop" aria-hidden="true">
+                        <span class="project-art-index">01 / COMMERCE</span>
+                        <span class="project-art-title">SHOP<br>EXPERIENCE</span>
+                        <span class="project-art-orbit"></span>
+                        <span class="project-art-device"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags"><span>Flutter</span><span>Dart</span><span>flutter_svg</span></div>
+                        <h3>E-commerce App Templates</h3>
+                        <p>A shopping UI template with category browsing, product details, pricing, and a Buy Now action.</p>
+                        <a class="project-link" href="https://github.com/RahulDobariya/E-commerce-Mobile-App-Templates"
+                            target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-art project-art-chat" aria-hidden="true">
+                        <span class="project-art-index">02 / MESSAGING</span>
+                        <span class="project-art-title">CHAT<br>YOUR WAY</span>
+                        <span class="project-art-orbit"></span>
+                        <span class="project-art-device"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags"><span>Flutter</span><span>Light &amp; dark UI</span></div>
+                        <h3>Chat &amp; Messaging UI</h3>
+                        <p>A multi-screen messaging interface covering chat, contacts, call history, and profile flows.</p>
+                        <a class="project-link" href="https://github.com/RahulDobariya/chat-app-ui-dark-light"
+                            target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-art project-art-tokoto" aria-hidden="true">
+                        <span class="project-art-index">03 / SHOPPING UI</span>
+                        <span class="project-art-title">TOKOTO<br>UI KIT</span>
+                        <span class="project-art-orbit"></span>
+                        <span class="project-art-device"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Mobile UI</span></div>
+                        <h3>TOKOTO UI Kit</h3>
+                        <p>A shopping app UI kit with onboarding, account screens, product details, orders, and profile.</p>
+                        <a class="project-link" href="https://github.com/RahulDobariya/TOKOTO-UI-Kit"
+                            target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-art project-art-stream" aria-hidden="true">
+                        <span class="project-art-index">04 / STREAMING UI</span>
+                        <span class="project-art-title">SCREEN<br>TIME</span>
+                        <span class="project-art-orbit"></span>
+                        <span class="project-art-device"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags"><span>Flutter</span><span>Dart</span><span>UI clone</span></div>
+                        <h3>Netflix UI Clone</h3>
+                        <p>A Flutter and Dart streaming-service interface concept, shared as a source repository.</p>
+                        <a class="project-link" href="https://github.com/RahulDobariya/netflix-clone"
+                            target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
             </div>
-            <div>
-                <img id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=RahulDobariya&show_icons=true&locale=en"
-                    alt="RahulDobariya" />
-            </div>
-        </div>
-        <!-- <h1>GITHUB CALENDER</h1>
-        <div>
-            <div class="calendar react-activity-calendar"></div>
-            <link rel="stylesheet"
-                href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-            <script>
-                GitHubCalendar(".calendar", "RahulDobariya");
-                GitHubCalendar(".calendar", "RahulDobariya", { responsive: true });
-            </script>
-        </div> -->
-    </section>
+            <p class="project-footnote">Open a repository to explore its source code and README previews.</p>
+        </section>
 
-    <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
-        <div>
-            <h1>CONTACT</h1>
-            <p id="contact-phone">Contact Number - +917984030748</p>
-            <p id="contact-email">Email Address - sendydobariya007@gmail.com</p>
-            <p>Surat ❤️ India</p>
-            <div>
-                <h1 id="contact-github" onclick="git()"><i class="bi bi-github"></i></h1>
-                <h1 id="contact-linkedin" onclick="linkedin()"><i class="bi bi-linkedin"></i></h1>
-                <h1 onclick="instagram()"><i class="bi bi-instagram"></i></h1>
-                <h1 id="contact-github" onclick="git1()"><i class="bi bi-github"></i></h1>
+        <section id="experience" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+                <h2>Building Flutter apps, <span>in production.</span></h2>
+                <p class="section-intro">
+                    Recent roles focused on reliable cross-platform delivery, app performance, and quality.
+                </p>
             </div>
-        </div>
-    </section>
+            <div class="experience-list">
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <p class="experience-date">JAN 2025 — PRESENT</p>
+                        <h3>Flutter Consultant</h3>
+                        <p class="experience-company">Capgemini</p>
+                        <p class="experience-location">Pune, India</p>
+                    </div>
+                    <ul>
+                        <li>Built Flutter features with Clean Architecture, Riverpod, and BLoC, keeping data, domain, and presentation layers separate.</li>
+                        <li>Cut screen load times by 32% with const widgets, lazy loading, and Impeller optimizations.</li>
+                        <li>Raised coverage from 41% to 79% across three feature modules with golden, widget, and integration tests.</li>
+                        <li>Added GraphQL with graphql_flutter and normalized caching, reducing redundant network calls by 45%.</li>
+                        <li>Adopted Freezed and json_serializable for models, and GetIt/Injectable to keep layers independently testable.</li>
+                        <li>Automated builds and distribution with Jenkins, GitHub Actions, and Firebase App Distribution.</li>
+                        <li>Delivered Material 3 screens for Android, iOS, and web, and mentored three developers on BLoC, Clean Architecture, and TDD.</li>
+                        <li>Used AI-assisted Dart model generation, code reviews, and debugging to speed up development.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <p class="experience-date">APR 2023 — DEC 2024</p>
+                        <h3>Senior Systems Engineer</h3>
+                        <p class="experience-company">Infosys</p>
+                        <p class="experience-location">Pune, India</p>
+                    </div>
+                    <ul>
+                        <li>Shipped 12+ features across three enterprise Flutter apps using Clean Architecture, BLoC, and GoRouter.</li>
+                        <li>Improved startup performance by 25% with deferred loading, image caching, and lazy initialization.</li>
+                        <li>Built REST integrations with Dio 5.x, including token refresh, error handling, and automatic retries.</li>
+                        <li>Implemented deep links, authentication guards, and nested routes with GoRouter.</li>
+                        <li>Added unit and widget tests with Mockito and Mocktail, reaching over 80% coverage, and reviewed feature code.</li>
+                        <li>Handled Play Store and App Store releases, including versioning, changelogs, and staged rollouts.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <p class="experience-date">JAN 2022 — APR 2023</p>
+                        <h3>Mobile Developer</h3>
+                        <p class="experience-company">Radix Software Services</p>
+                        <p class="experience-location">Surat, India</p>
+                    </div>
+                    <ul>
+                        <li>Contributed Flutter features to e-commerce and enterprise apps serving more than 10,000 active users.</li>
+                        <li>Built product listing, cart, checkout, and order-tracking flows with Firebase real-time sync and offline fallback.</li>
+                        <li>Integrated Razorpay and Google Pay, including transaction states, error recovery, and payment handling.</li>
+                        <li>Migrated navigation to GoRouter in two projects, adding deep links and authentication guards.</li>
+                        <li>Automated Android and iOS builds with GitHub Actions and used AI-assisted UI prototyping to speed up screen drafts.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <p class="experience-date">MAR 2021 — DEC 2021</p>
+                        <h3>Flutter Developer</h3>
+                        <p class="experience-company">Exelance IT</p>
+                        <p class="experience-location">Surat, India</p>
+                    </div>
+                    <ul>
+                        <li>Built three Flutter apps from requirements and UI through Firebase integration and client handover.</li>
+                        <li>Created responsive tablet and phone layouts with LayoutBuilder, MediaQuery, and adaptive breakpoints.</li>
+                        <li>Worked directly with clients in Agile sprints to turn requirements into production features.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contact-card">
+                <div class="section-heading">
+                    <p class="eyebrow">LET'S BUILD A FLUTTER APP</p>
+                    <h2>Your next mobile app <span>starts here.</span></h2>
+                </div>
+                <p class="contact-copy">Have a Flutter project in mind? I'd love to hear what you're building.</p>
+                <a class="button button-primary contact-email" id="contact-email"
+                    href="mailto:sendydobariya@gmail.com">
+                    sendydobariya@gmail.com <span aria-hidden="true">↗</span>
+                </a>
+                <p class="contact-phone" id="contact-phone">
+                    <a href="tel:+917984030748">+91 79840 30748</a><span>Surat, India</span>
+                </p>
+                <div class="social-links">
+                    <a id="contact-github" href="https://github.com/RahulDobariya" target="_blank"
+                        rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/rahul-dobariya/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.instagram.com/_rahul_dobariya_007_/" target="_blank"
+                        rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="#home">RD<span>.</span></a>
+        <p>Designed &amp; built by Rahul Dobariya</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-<script src="index.js"></script>
-
-<script>
-    function git() {
-        window.open("https://github.com/RahulDobariya", "_blank");
-    }
-    function git1() {
-        window.open("https://github.com/SendyDobariya", "_blank");
-    }
-    function linkedin() {
-        window.open("https://www.linkedin.com/in/rahul-dobariya/", "_blank");
-    }
-    function instagram() {
-
-        window.open("https://www.instagram.com/_rahul_dobariya_007_/", "_blank");
-    }
-</script>
